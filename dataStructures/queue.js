@@ -26,11 +26,11 @@ class Queue {
 }
 
 const queue = new Queue();
-queue.enqueue(100);
-queue.enqueue(9);
-queue.enqueue(0);
-queue.enqueue(-4);
+// queue.enqueue(100);
+// queue.enqueue(9);
+// queue.enqueue(0);
+// queue.enqueue(-4);
 // queue.dequeue();
 // queue.dequeue();
 // queue.dequeue();
-console.log(queue);
+// console.log(queue);
