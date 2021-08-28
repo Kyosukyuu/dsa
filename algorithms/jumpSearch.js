@@ -8,11 +8,11 @@ const jumpSearch = (arr, target) => {
   let subsetEnd = step;
 
   while (arr[Math.min(subsetEnd, arrLen) - 1] < target) {
-    console.log(subsetStart, "to", subsetEnd);
+    console.log(subsetStart, "to", subsetEnd - 1);
     subsetStart = subsetEnd;
     subsetEnd += step;
   }
-  console.log(subsetStart, "to", subsetEnd);
+  console.log(subsetStart, "to", subsetEnd - 1);
 
   while (arr[subsetStart] < target) {
     subsetStart++;
@@ -24,7 +24,8 @@ const jumpSearch = (arr, target) => {
   else return -1;
 };
 
-const arr = [1, 3, 5, 8, 10, 14, 23, 37, 40];
+// const arr = [1, 3, 5, 8, 10, 14, 23, 37, 40];
+const arr = [0];
 
-const res = jumpSearch(arr, 23);
+const res = jumpSearch(arr, 0);
 console.log(`INDEX: `, res);
