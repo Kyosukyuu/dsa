@@ -17,10 +17,10 @@ const jumpSearch = (arr, target) => {
   while (arr[subsetStart] < target) {
     subsetStart++;
 
-    if (subsetStart == Math.min(subsetEnd, arrLen)) return -1;
+    if (subsetStart === Math.min(subsetEnd, arrLen)) return -1;
   }
 
-  if (arr[subsetStart] == target) return subsetStart;
+  if (arr[subsetStart] === target) return subsetStart;
   else return -1;
 };
 
@@ -29,3 +29,4 @@ const arr = [0];
 
 const res = jumpSearch(arr, 0);
 console.log(`INDEX: `, res);
+console.log("ARR LEN:", arr.length);
